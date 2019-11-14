@@ -1,0 +1,13 @@
+public class HandlerActivity  extends AppCompatActivity {
+
+    @Override
+    public void onStart(){
+        super.onStart();
+
+        /////////////////////////////////////////////////////////////////////////
+        //   EXCEPTION HANDLER                                                 //
+        /////////////////////////////////////////////////////////////////////////
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
+    }
+
+}
